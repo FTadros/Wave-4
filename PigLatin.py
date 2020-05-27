@@ -3,7 +3,6 @@ vowels = ['a', 'e', 'i', 'o', 'u']
 phrase = input("Enter Phrase: ")
 words = phrase.split()
 pl_words = []
-i = 0
 
 for word in words:
     if word[0] in (vowels):
@@ -11,6 +10,7 @@ for word in words:
         pl_words.append(word)
 
     else:
+        i = 0
         for letter in word:
             if letter in vowels:
                 end = word[:i]
